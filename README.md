@@ -11,8 +11,9 @@ Add render.c and render.h to linux partion /root/wifibroadcast_osd
 Add osdconfig.txt to normal sd partition (make shure you reset your own settings)  
 or add:   
 #define BATT_MAH  
-#define BATT_MAH_POS_X 32  
+#define BATT_MAH_POS_X 32
 #define BATT_MAH_POS_Y 12  
 #define BATT_MAH_SCALE 1  
-
+  
+  
 When installing directly on raspberry, reboot afterwarts   
