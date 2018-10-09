@@ -19,3 +19,9 @@ or add:
   
   
 When installing directly on raspberry, reboot afterwarts   
+
+### info
+
+if you like the feature or you want more features, let me know in the issues or email me at creal.fpv@gmail.com
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](cyrilknops@gmail.com)
