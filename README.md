@@ -2,7 +2,7 @@
 Bit of code to add mAh readings to the ez-wifibroadcast osd
 
 
-##instalation
+## instalation
 
 You need to have acces to the linux partion, you can do this by adding the files first to the normal sd card and coping them by plugging in a usb keyboard to the RX pi
 or installing ubuntu or other linux distrubution on a computer or VM
