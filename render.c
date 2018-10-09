@@ -905,15 +905,11 @@ void draw_batt_status(float voltage, float current, float pos_x, float pos_y, fl
     //end changed
 }
 
+//added by creal_fpv
 void draw_batt_mah(float voltage, float current, float pos_x, float pos_y, float scale){
     float text_scale = getWidth(2) * scale;
 
     VGfloat height_text = TextHeight(myfont, text_scale)+getHeight(0.3)*scale;
-
-    //added by creal_fpv
-    if(voltage <= 0){ //reset mAhDrawn if battery is removed
-        mAhDrawn = 0;
-    }
     if(first){ //little trick needed to be done to take the initial time
         lastT = current_ts();
         first = false;
@@ -923,14 +919,11 @@ void draw_batt_mah(float voltage, float current, float pos_x, float pos_y, float
     mAhDrawn += mAhDrawRaw; //add the calculated mAh the total used
 
     lastT = current_ts(); //set lastT back to current time
-    //end edded
-
-    //added by creal_fpv
     sprintf(buffer, "%.f", mAhDrawn);
     TextEnd(getWidth(pos_x), getHeight(pos_y), buffer, myfont, text_scale);
     Text(getWidth(pos_x), getHeight(pos_y), " mAh", myfont, text_scale*0.6);
-    //end edded
 }
+//end edded
 
 void draw_position(float lat, float lon, float pos_x, float pos_y, float scale){
     float text_scale = getWidth(2) * scale;
