@@ -47,7 +47,9 @@ void draw_message(int severity, char line1[30], char line2[30], char line3[30], 
 //this will only indicate how much % are left. Mavlink specific, but could be used with others as well.
 void draw_batt_gauge(int remaining, float pos_x, float pos_y, float scale);
 void draw_batt_status(float voltage, float current, float pos_x, float pos_y, float scale);
+//added by creal_fpv
 void draw_batt_mah(float voltage, float current, float pos_x, float pos_y, float scale);
+//added end
 void draw_position(float lat, float lon, float pos_x, float pos_y, float scale);
 void draw_sat(int sats, int fixtype, float pos_x, float pos_y, float scale);
 void draw_home_distance(int distance, bool home_fixed, float pos_x, float pos_y, float scale);
