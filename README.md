@@ -1,4 +1,6 @@
 # ez-wifibroadcast-osd-mah
+project moved to https://github.com/cyrilknops/ez-wifibroadcast-features  
+
 Bit of code to add mAh readings to the ez-wifibroadcast osd
 
 ![GitHub Logo](screenshot.jpeg)
