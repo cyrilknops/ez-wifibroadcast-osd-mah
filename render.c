@@ -799,7 +799,9 @@ void draw_home_arrow(float abs_heading, float craft_heading, float pos_x, float 
     //because arrow is drawn relative to the osd/camera view we need to offset by craft's heading
     float rel_heading = abs_heading - craft_heading; //direction arrow needs to point relative to camera/osd/craft
     #if HOME_ARROW_INVERT == true
-        abs_heading = 360 - abs_heading;
+      //  abs_heading = 360 - abs_heading;
+	abs_heading = abs_heading - 180; // bug fix
+	
         //rel_heading -= 180;
     #endif
     if (rel_heading < 0) rel_heading += 360;
